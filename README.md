@@ -46,9 +46,8 @@ By using our self-developed model pruning method, the FLOPs of MobileFaceNet is 
 ### Install dependency Library  
 ```
 pip install -r requirements.txt
-```
+``` 
 
-```  
 ### Data Preprocessing
 1.The training set is divided into three categories, and the pictures of the same category are put into a folder;  
 2.Due to the multi-scale model fusion method, the original image and different patch are used to train the model, so the data is divided into the original map and the patch based on the Original picture;  
@@ -57,7 +56,7 @@ pip install -r requirements.txt
 
 3.The Fourier spectrum is used as the auxiliary supervision, and the corresponding Fourier spectrum is generated online from the training set images.  
 **The directory structure of the dataset is shown below**
-```
+
 ├── datasets
     └── RGB_Images
         ├── org_1_80x60
